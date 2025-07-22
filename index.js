@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors({
   origin: [
     "http://localhost:3000",
-    "https://khaloo.vercel.app/"
+    "https://khaloo.vercel.app"
   ],
   credentials: true
 }));
