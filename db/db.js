@@ -5,10 +5,8 @@ const mongoURI = process.env.MONGO_URI;
 
 const mongoDB = async () => {
   try {
-    await mongoose.connect(mongoURI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true, // recommended
-    });
+    await mongoose.connect(mongoURI);
+
     console.log("MongoDB connected successfully");
 
     const fetched_data = mongoose.connection.db.collection("food_items");
